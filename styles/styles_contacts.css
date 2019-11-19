@@ -1,0 +1,31 @@
+.map_container, .location{
+    display: flex;
+}
+
+.map_container{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location{
+    align-items: center;
+    margin: 50px;
+}
+
+.box_menu{
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 12%;
+    margin-bottom: 20%;
+}
+
+iframe{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+li{
+    font-size: 18px;
+    font-weight: 20px;
+    list-style-type: none;
+}
