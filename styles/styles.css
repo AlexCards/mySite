@@ -68,19 +68,18 @@ body, html{
         list-style-type: none;
     }
 
-    
-    .Slide{
-        background: black;
-    }
-
-    .Slide img{
-        opacity: 0.5;
-    }
-    
     section img{
         width: 100%;
     }
 
+    .slideshow_container, .Slide, .Slide img{
+        height: 100%;
+    }
+
+    .Slide img{
+        filter: brightness(50%);
+    }
+    
     .slideshow_container{
         position: relative;
     }
