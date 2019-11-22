@@ -68,7 +68,16 @@ body, html{
         list-style-type: none;
     }
 
-    
+    .mySlide img{
+        width: 100%;
+        margin-bottom: -5px;
+        filter: brightness(50%);
+    }
+
+    .slideshow_container{
+        position: relative;
+    }
+
 
     .text{
         color: white;
@@ -470,7 +479,7 @@ body, html{
         }
     }
 
-    @media screen and (max-width: 312px){
+    @media screen and (max-width: 341px){
         main h3{
             font-size: 23px;
         }
@@ -493,10 +502,10 @@ body, html{
         }
 
         .nav_footer{
-            margin: 5px 0px 5px 5px;
+            margin: 5px 0px 5px 10px;
         }
 
         .footerInfo{
-            margin-right: 5px;
+            margin-right: 10px;
         }
     }
