@@ -68,21 +68,7 @@ body, html{
         list-style-type: none;
     }
 
-    section img{
-        width: 100%;
-    }
-
-    .slideshow_container, .Slide, .Slide img{
-        height: 100%;
-    }
-
-    .Slide img{
-        filter: brightness(50%);
-    }
     
-    .slideshow_container{
-        position: relative;
-    }
 
     .text{
         color: white;
