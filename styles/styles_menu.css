@@ -68,43 +68,43 @@ body, html{
         list-style-type: none;
     }
 
-
-    main{
-        text-align: center;
-    }
-
-    .drinks{
-        margin: 0%;
-        padding: 0%;
+    .menuContainer{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        perspective: 1000px; 
     }
+    
 
-    .drinks img{
-        width: 250px;
-        height: 250px;
-        border-radius: 200px;
-    }
-
-    .drinks li{
-        list-style-type: none;
+    .drinks, .sweets{
+        height: 100%;
+        width: 40%;
         text-align: center;
+        margin: 75px 0px;
     }
 
-    .drinks li figcaption{
-        background: white;
-        border-radius: 5%;
-        width: 70%;
-        margin: auto;
+    .drinks img, .sweets img{
+        width: 100%;
     }
 
-    .drinks li figcaption h5{
-        padding-top: 10px;
+    .menuContainer figure{
+        margin-top: 60px;
     }
 
-    .drinks li figcaption p{
-        padding-bottom: 10px;
+    .menuContainer figcaption{
+        color: white;
+        font-size: 30px;
+    }
+
+    .drinks, .sweets{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .sweets, .drinks{
+        background-color: rgba(142, 90, 53, 0.6);
     }
 
     footer{
@@ -280,22 +280,6 @@ body, html{
         }
 
 
-
-        main h3{
-            height: 150px;
-        }
-
-        figure img{
-            width: 100px;
-            height: 100px;
-        }
-
-        .main_text{
-            font-size: 25px;
-        }
-
-        
-
         .footerContentContainer{
             display: flex;
         }
@@ -303,6 +287,7 @@ body, html{
         .footerNavs{
             flex-direction: column;
             align-items: flex-start;
+            width: 0%;
         }
 
         .nav_footer{
@@ -329,79 +314,22 @@ body, html{
         .relativeNavs a {font-size: 18px;}
       }
 
-    @media screen and (max-width: 740px){
 
-        .figure_container figcaption{
-            font-size: 25px;
-        }
-
-        main h3{
-            font-size: 35px;
-            height: 100px;
-        }
-
-        .text p{
-            font-size: 25px;
-        }
-        .text h3{
-            font-size: 45px;
-        }
-
-        .main_text{
-            font-size: 25px;
-        }
-
-    }
-
-
-
-    @media screen and (min-width: 701px){
+    @media screen and (min-width: 994px){
         .responsiveContainer h3{
             display: none;
         }
     }
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 856px){
 
         .slideshow_container{
             display: none;
         }
 
-        .figure_container figcaption{
-            font-size: 30px;
-        }
-
-        .figure_container{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        figure img{
-            width: 150px;
-            height: 150px;
-        }
-
-        .figure_container li{
-            width: 100%;
-        }
-
-        .main_text{
-            width: 80%;
-        }
-
-        main h3{
-            margin-bottom: 10%;
-            margin-top: 51px;
-        }
-
     }
 
     @media screen and (max-width: 600px){
-
-        main h3{
-            font-size: 30px;
-            height: 75px;
-        }
 
         .nav_footer{
             margin: 5px 0px 5px 50px;
@@ -414,55 +342,24 @@ body, html{
     }
 
     @media screen and (max-width: 400px){
-        main h3{
-            font-size: 25px;
-        }
 
         .responsiveContainer h3{
             font-size: 14px;
         }
 
-        .main_text{
-            font-size: 20px;
-        }
-
-        figure img{
-            width: 120px;
-            height: 120px;
-        }
-        
-        .figure_container figcaption{
-            font-size: 25px;
-        }
     }
 
-    @media screen and (max-width: 312px){
-        main h3{
-            font-size: 23px;
-        }
+    @media screen and (max-width: 341px){
 
         .responsiveContainer h3{
             font-size: 12px;
         }
 
-        .main_text{
-            font-size: 17px;
-        }
-
-        figure img{
-            width: 100px;
-            height: 100px;
-        }
-        
-        .figure_container figcaption{
-            font-size: 20px;
-        }
-
         .nav_footer{
-            margin: 5px 0px 5px 5px;
+            margin: 5px 0px 5px 10px;
         }
 
         .footerInfo{
-            margin-right: 5px;
+            margin-right: 10px;
         }
     }
