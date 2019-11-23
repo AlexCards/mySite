@@ -5,6 +5,8 @@ body, html{
     font-family: Raleway, sans-serif;
     height: 100%;
     background-color: RGB(254, 230, 204);
+    position: relative;
+    padding-bottom: 30%;
 }
 
     .navs{
@@ -68,20 +70,13 @@ body, html{
         list-style-type: none;
     }
 
+
     .menuContainer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        perspective: 1000px; 
     }
-    
 
-    .drinks, .sweets{
-        height: 100%;
-        width: 40%;
-        text-align: center;
-        margin: 75px 0px;
-    }
 
     .drinks img, .sweets img{
         width: 100%;
@@ -99,19 +94,61 @@ body, html{
     .drinks, .sweets{
         display: flex;
         flex-direction: column;
-    }
-
-
-
-    .sweets, .drinks{
+        width: 100%;
+        text-align: center;
+        margin: 75px 0px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 600ms;
+        transition: all 600ms;
         background-color: rgba(142, 90, 53, 0.6);
+        position: absolute;
     }
+
+
+    label {
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        width: 500px;
+    }
+    
+    
+    .drinks div, .sweets div {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .drinks .back, .sweets .back {
+        position: absolute;
+        color: #FFF;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    
+    
+    input {
+        display: none;
+    }
+    
+    :checked + .drinks, :checked + .sweets {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+    
+    
 
     footer{
         background: grey;
         text-align: center;
         position: absolute;
         width: 100%;
+        bottom: 0%;
     }
 
     footer h5{
