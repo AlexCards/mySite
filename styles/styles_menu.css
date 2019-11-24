@@ -101,7 +101,6 @@ body, html{
         transform-style: preserve-3d;
         -webkit-transition: all 600ms;
         transition: all 600ms;
-        background-color: rgba(142, 90, 53, 0.6);
         position: absolute;
     }
 
@@ -123,12 +122,63 @@ body, html{
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-    
-    .drinks .back, .sweets .back {
+
+    :checked + .drinks, :checked + .sweets {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+
+    .front, .back{
+        background-color: rgba(142, 90, 53, 0.6);
+    }
+      
+    .back {
         position: absolute;
         color: #FFF;
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
+    }
+
+    .products li, .prices li{
+        list-style-type: none;
+    }
+
+    .back{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .back ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .products li{
+        text-align: start;
+    }
+
+    .products{
+        flex: 1;
+    }
+
+    .prices{
+        text-align: end;
+    }
+
+    .products li, .prices li{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .products li{
+        margin-left: 30px ;
+    }
+
+    .prices li{
+        margin-right: 30px;
     }
     
     
@@ -136,10 +186,7 @@ body, html{
         display: none;
     }
     
-    :checked + .drinks, :checked + .sweets {
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-    }
+    
     
     
 
