@@ -7,17 +7,18 @@ function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlide");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 3500); 
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3500);
 }
 
-
 AOS.init({
-  duration: 1500,
+  duration: 1500
 });
 
 AOS.init({
@@ -27,12 +28,10 @@ AOS.init({
   }
 });
 
-
 function openNav() {
-    document.getElementById("mySidenav").style.width = "270px";
-  }
-  
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  document.getElementById("mySidenav").style.width = "270px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
