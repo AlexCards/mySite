@@ -166,6 +166,10 @@ label {
   padding: 0%;
 }
 
+.back li{
+  height: 24px;
+}
+
 .products li {
   text-align: start;
 }
@@ -318,9 +322,6 @@ footer h5 {
     width: 80%;
   }
 
-  /* .menuContainer {
-    justify-content: space-around;
-  } */
 }
 
 @media screen and (max-width: 993px) {
@@ -479,7 +480,7 @@ footer h5 {
 }
 
 @media screen and (min-width: 588px) {
-  .back h3 {
+  .mobileCap {
     display: none;
   }
 }
@@ -502,6 +503,19 @@ footer h5 {
   .back {
     transform: none;
     -webkit-transform: none;
+  }
+
+  .back{
+    position: relative;
+    padding: 50px 0px;
+  }
+
+  .mobileCap{
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .products li h3 {
