@@ -4,7 +4,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: Raleway, sans-serif;
-  height: 100%;
   background-color: RGB(254, 230, 204);
 }
 
@@ -68,22 +67,30 @@ nav {
   list-style-type: none;
 }
 
-main {
+.galleryContaier {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: auto;
   width: 70%;
+  position: relative;
 }
+
 
 main li {
   list-style-type: none;
 }
 
 main img {
-  width: 35%;
+  width: 45%;
   height: auto;
   margin: 5px 5px;
+}
+
+main {
+  height: 73%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 footer {
@@ -270,6 +277,14 @@ footer h5 {
     width: 35px;
   }
 
+  .galleryContaier{
+    margin-top: 51px;
+  }
+
+  .galleryContaier img{
+    width: 100%;
+  }
+
   .footerContentContainer {
     display: flex;
   }
@@ -313,7 +328,7 @@ footer h5 {
   }
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 994px) {
   .responsiveContainer h3 {
     display: none;
   }
