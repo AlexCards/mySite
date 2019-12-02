@@ -164,6 +164,18 @@ footer h5 {
   width: 100%;
 }
 
+@media screen and (min-width: 2500px) {
+  .nav a,
+  .nav_footer a {
+    font-size: 35px;
+  }
+
+  .logo_container li,
+  .footerInfo li {
+    font-size: 25px;
+  }
+}
+
 @media screen and (min-width: 994px) {
   .relativeNavs {
     display: none;
@@ -280,7 +292,7 @@ footer h5 {
     height: 100%;
   }
 
-  main ul{
+  main ul {
     margin-top: 51px;
   }
 
@@ -350,8 +362,7 @@ footer h5 {
 }
 
 @media screen and (max-width: 600px) {
-
-  iframe{
+  iframe {
     width: 350px;
     height: 300px;
   }
@@ -366,8 +377,7 @@ footer h5 {
 }
 
 @media screen and (max-width: 400px) {
-
-  iframe{
+  iframe {
     width: 300px;
   }
 

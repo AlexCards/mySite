@@ -212,6 +212,8 @@ footer h5 {
 .footerInfo .time,
 .footerInfo .contacts {
   list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 
 .footerInfo {
@@ -219,6 +221,45 @@ footer h5 {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+@media screen and (min-width: 2500px) {
+  .nav a,
+  .nav_footer a,
+  main h5 {
+    font-size: 35px;
+  }
+
+  .logo_container li,
+  .footerInfo li {
+    font-size: 25px;
+  }
+
+  main h3 {
+    height: 200px;
+  }
+
+  main h3,
+  main p,
+  .text p {
+    font-size: 53px;
+  }
+
+  figure,
+  .figure_container li,
+  .figure_container img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .figure_container li {
+    margin-bottom: 300px;
+    margin: auto;
+  }
+
+  .text h3 {
+    font-size: 60px;
+  }
 }
 
 @media screen and (min-width: 994px) {
