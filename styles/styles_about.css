@@ -335,7 +335,6 @@ footer h5 {
   main img {
     width: 300px;
   }
-
 }
 
 @media screen and (min-width: 994px) {
@@ -360,11 +359,11 @@ footer h5 {
 }
 
 @media screen and (max-width: 400px) {
-  main img{
+  main img {
     width: 250px;
   }
 
-  main{
+  main {
     font-size: 17px;
   }
 
