@@ -212,8 +212,6 @@ footer h5 {
 .footerInfo .time,
 .footerInfo .contacts {
   list-style-type: none;
-  text-decoration: none;
-  color: black;
 }
 
 .footerInfo {
