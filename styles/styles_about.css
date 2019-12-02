@@ -4,7 +4,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: Raleway, sans-serif;
-  height: 100%;
   background-color: RGB(254, 230, 204);
 }
 
@@ -69,10 +68,22 @@ nav {
 }
 
 main {
+  margin: auto;
   display: flex;
-  height: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
 }
 
+main img {
+  height: auto;
+  width: 500px;
+  margin: 20px;
+  border-radius: 200%;
+}
 
 footer {
   background: grey;
@@ -258,6 +269,9 @@ footer h5 {
     width: 35px;
   }
 
+  main {
+    margin-top: 58.44px;
+  }
 
   .footerContentContainer {
     display: flex;
@@ -300,18 +314,38 @@ footer h5 {
   .figure_container figcaption {
     font-size: 25px;
   }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 80%;
+  }
+
+  main img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    width: 85%;
+    font-size: 18px;
+  }
+
+  main img {
+    width: 300px;
+  }
 
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 994px) {
   .responsiveContainer h3 {
     display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-
-  iframe{
+  iframe {
     width: 350px;
     height: 300px;
   }
@@ -326,9 +360,12 @@ footer h5 {
 }
 
 @media screen and (max-width: 400px) {
+  main img{
+    width: 250px;
+  }
 
-  iframe{
-    width: 300px;
+  main{
+    font-size: 17px;
   }
 
   .responsiveContainer h3 {
