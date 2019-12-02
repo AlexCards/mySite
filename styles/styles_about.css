@@ -157,6 +157,28 @@ footer h5 {
   width: 100%;
 }
 
+@media screen and (min-width: 2500px) {
+  .nav a,
+  .nav_footer a {
+    font-size: 35px;
+  }
+
+  .logo_container li,
+  .footerInfo li {
+    font-size: 25px;
+  }
+
+  main p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-height: 1800px) {
+  footer {
+    bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 994px) {
   .relativeNavs {
     display: none;

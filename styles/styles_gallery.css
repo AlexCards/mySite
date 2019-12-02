@@ -322,6 +322,18 @@ footer h5 {
   }
 }
 
+@media screen and (min-width: 2500px) {
+  .nav a,
+  .nav_footer a {
+    font-size: 35px;
+  }
+
+  .logo_container li,
+  .footerInfo li {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-height: 450px) {
   .relativeNavs {
     padding-top: 15px;
