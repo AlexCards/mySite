@@ -271,7 +271,16 @@ footer h5 {
   width: 100%;
 }
 
-@media screen and (min-height: 1200px) {
+@media screen and (min-height: 1200px) and (min-width: 994px) {
+  html,
+  body,
+  main,
+  .menuContainer {
+    height: 100%;
+  }
+}
+
+@media screen and (min-height: 1700px) and (max-width: 993px) {
   html,
   body,
   main,
@@ -428,70 +437,6 @@ footer h5 {
 
   .menuContainer {
     flex-direction: column;
-  }
-
-  main {
-    height: 100%;
-  }
-
-  @media screen and (max-height: 1400px) {
-    main {
-      height: 115%;
-    }
-  }
-
-  @media screen and (max-height: 1270px) {
-    main {
-      height: 125%;
-    }
-  }
-
-  @media screen and (max-height: 1150px) {
-    main {
-      height: 135%;
-    }
-  }
-
-  @media screen and (max-height: 1070px) {
-    main {
-      height: 150%;
-    }
-  }
-
-  @media screen and (max-height: 960px) {
-    main {
-      height: 175%;
-    }
-  }
-
-  @media screen and (max-height: 741px) {
-    main {
-      height: 200%;
-    }
-  }
-
-  @media screen and (max-height: 656px) {
-    main {
-      height: 250%;
-    }
-  }
-
-  @media screen and (max-height: 540px) {
-    main {
-      height: 300%;
-    }
-  }
-
-  @media screen and (max-height: 466px) {
-    main {
-      height: 350%;
-    }
-  }
-
-  @media screen and (max-height: 400px) {
-    main {
-      height: 400%;
-    }
   }
 
   .footerContentContainer {
